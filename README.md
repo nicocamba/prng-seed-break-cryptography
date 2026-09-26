@@ -6,7 +6,7 @@ This is an educational demonstration of a weak linear feedback shift register an
 
 ## Files
 
-- `Crypto_students.c` — brute-force C implementation.
+- `rng_break.c` — brute-force C implementation.
 - `cipher_bits.bin` — binary input read by the C program.
 - `image1_binary_crypt_sol_145.npy`, `image2_binary_crypt_sol_145.npy`, `image3_binary_crypt_sol_145.npy` — original NumPy data files retained from the project archive. The C program does not read these files directly.
 
@@ -15,14 +15,14 @@ This is an educational demonstration of a weak linear feedback shift register an
 Requires a C compiler and the math library. With GCC or Clang:
 
 ```sh
-gcc -O2 Crypto_students.c -o seed-search -lm
+gcc -O2 rng_break.c -o seed-search -lm
 ./seed-search
 ```
 
 On Windows with MinGW-w64:
 
 ```powershell
-gcc -O2 Crypto_students.c -o seed-search.exe -lm
+gcc -O2 rng_break.c -o seed-search.exe -lm
 .\seed-search.exe
 ```
 
